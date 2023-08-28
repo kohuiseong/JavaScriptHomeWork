@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeWork</title>
+
+    <script src="js/out2.js"></script>
+</head>
+<body>
+    <script>
+        //1
+        for(i=1; i<=3; i++) {
+            document.write('@@@', '<br>');
+        } 
+
+        //3
+        trip();
+        rest();
+
+        //4 : 당신은 자바 프로그래머 인가요?
+        let java = confirm('당신은 자바 프로그래머 인가요?')
+        if(java) {
+            document.write('훌륭한 웹 프로그래머시군요', '<br>')
+        } else {
+            document.write('다른 언어를 사용하시는군요!', '<br>')
+
+        }
+
+        //5 10% 할인
+        let coffee = prompt('커피값')
+        let pcnt = prompt('구매 카운트')
+        let total = coffee * pcnt;
+        if (total >= 15000) {
+            document.write('10% 할인 해드릴게요', '<br>')
+        } else {
+            document.write('정가로 내셔야 해요',  '<br>')
+        }
+
+    
+        //6
+        let food = prompt("음식")
+        let price = prompt("가격")
+        if ((food=="커피" && price<5000)){
+            document.write("내가 살게요",  '<br>')
+        }
+        else{
+            document.write("너가 사세요",  '<br>')
+        }
+
+
+        //7
+        morning = prompt('오전 인가요 오후 인가요');
+        switch (morning) {
+            case '오전' : 
+                document.write('굿모닝 굿모닝 굿모닝', '<br>');
+                break;
+            case '오후' : 
+                document.write('굿애프터눈 굿애프터눈 굿애프터눈 굿애프터눈 굿애프터눈', '<br>');
+                break;
+            default : 
+            str= '그런 시간은 없습니다';
+            
+        }
+    </script>
+</body>
+</html>
